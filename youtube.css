@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  display: flex;
+  margin: 0;
+  height: 100vh;
+  font-family: 'Roboto', sans-serif;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-right: 1px solid #ddd;
+}
+
+.icon {
+  height: 8vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2em;
+  cursor: pointer;
+}
+
+.icon ion-icon {
+  font-size: 2em;
+}
+
+.icon p {
+  margin: 0;
+}
+
+.icon:not(:first-of-type) {
+  height: 16vh;
+}
+
+.main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.topbar {
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1em;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo {
+  height: 50%;
+  cursor: pointer;
+}
+
+.search-wrapper {
+  display: flex;
+  height: 50%;
+  width: 30%;
+}
+
+.search-wrapper input {
+  width: 100%;
+  padding: 0 1em;
+}
+
+.search-btn {
+  padding: 0 0.7em;
+  font-size: 1.3em;
+  display: flex;
+  align-items: center;
+}
+
+.mic-icon {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.icons-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.top-icon {
+  font-size: 2em;
+  padding: 0 0.5em;
+}
+
+.content {
+  height: calc(100vh - 8vh);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  padding: 1em;
+  overflow-y: auto;
+  align-content: flex-start;
+  justify-content: space-between;
+}
+
+.video-box {
+  flex: 0 0 calc(33.333% - 1em);
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 0.5em;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.video-box:hover {
+  transform: scale(1.03);
+}
+
+.video-box img {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.video-title {
+  margin-top: 0.5em;
+  font-size: 1em;
+  font-weight: bold;
+  text-align: center;
+}
